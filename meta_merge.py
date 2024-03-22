@@ -264,7 +264,7 @@ def process_xray(data, index):
 
 def update_proxy_groups(config_data, merged_proxies):
     for group in config_data["proxy-groups"]:
-        if group["name"] in ["自动选择", "节点选择"]:
+        if group["name"] in ["自动选择", "节点选择", "🇭🇰 香港节点"]:
             if "proxies" not in group or not group["proxies"]:
                 group["proxies"] = [proxy["name"] for proxy in merged_proxies]
             else:
